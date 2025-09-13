@@ -2,11 +2,14 @@ main {
     max-width: 840px;
 }
 
+nav {
+    background-color: rgb(75, 143, 207);
+    padding: 10px;
+}
 nav a {
     color: white;
     padding: 10px;
     display: block;
-    background-color: rgb(75, 143, 207);
 }
 
 h1 {
@@ -21,7 +24,8 @@ main img{
     box-shadow: 0 0 30px gray;
 }
 
-p {padding: 0;
+p {
+    padding: 0;
 }
 aside{
     width: 20rem;
@@ -39,6 +43,6 @@ aside img{
 
 footer {
     margin-top: 1em;
-    border: 1px solid #000000;
+    border-top: 1px solid #000000;
     text-align: center;
 }
