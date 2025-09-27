@@ -13,11 +13,14 @@
     box-sizing: border-box;
 }
 
+/* header */
+
 header {
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
 }
 
 nav ul {
@@ -28,7 +31,15 @@ nav ul {
 
 nav a {
   color: #fff;  
+  text-decoration: none;
+  font-weight: bold;
 }
+/* this statement here will make an underline appear when the user hovers through the navigation elements*/
+nav a:hover{
+  text-decoration: underline;
+}
+
+/* main - body*/
 
 body {
     font-family: var(--body-font);
@@ -59,14 +70,15 @@ h2 {
     position: relative;
     top: 2px;
     width: 100%;
-    padding: 8px;
+    padding: 1rem;
+    margin: auto;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
 } 
 
-/* hero image*/
+/* hero */
 
 .hero {
   position: relative;
@@ -80,23 +92,23 @@ h2 {
 }
 
 .hero h1 {
-    position: absolute;
-    top: 5%;
-    right: 0%;
-    width: 100%;
-    text-align: center;
-    padding: 16px;
-    background-color: rgba(23, 46, 19, 0.7); 
-    color: #fff;
-    font-size: 2rem;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  background-color: rgba(23, 46, 19, 0.7); 
+  color: #fff;
+  font-size: 2rem;
 }
 
 .hero article {
   position: absolute;
-  bottom: 20px;
+  bottom: 200px;
   left: 20px;
   right: 20px;
-  background-color: rgba(255, 255, 255, 0.85); 
+  background-color: rgba(255, 255, 255, 0.514); 
   padding: 1rem;
   font-weight: bold;
 }
@@ -106,7 +118,67 @@ h2 {
   width: 125px;
   margin-left: 1rem;
 }
-/* */
-.socialmedia a {
-    text-decoration: none;
+
+/* history section*/
+
+.history-grid{
+  padding:2em;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:1.5rem;
+  margin-top:1px;
+}
+
+.history p, .history img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* adventure section */
+
+.adventure .gallery {
+  padding:2em;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top:1px;
+}
+
+.adventure figure {
+  flex: 1;  
+  text-align: center;
+}
+
+.adventure img {
+  width: 100%;
+}
+
+.adventure figcaption {
+  font-size: 20px;
+  color: var(--accent1-color);
+}
+
+/* footer section */
+footer{
+  background-color: var(--primary-color);
+  color:#fff;
+  text-align:center;
+  justify-content: space-between;
+  display:flex;
+  padding:1rem 2rem;
+}
+footer p{
+  margin-top:1em
+}
+footer .socialmedia{
+  display: flex;
+  gap:1em;
+  flex-direction:row;
+  justify-content: flex-end;
+  margin:0 10px;
+  text-decoration: none;
+
+
 }
