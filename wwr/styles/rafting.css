@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*     about us page      */
 
 /* header */
 
@@ -36,7 +37,7 @@ nav a {
 }
 /* this statement here will make an underline appear when the user hovers through the navigation elements*/
 nav a:hover{
-  color: var(--heading-font "sans-serif");
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -63,7 +64,6 @@ h1 {
   color: var(--primary-color);  
   position: absolute;
   top: 20px;
-  width: 100%;
   padding: 16px;
   text-align: center;
   color: #fff;
@@ -189,4 +189,141 @@ footer .socialmedia{
   justify-content: flex-end;
   margin:0 10px;
   text-decoration: none;
+}
+
+/*     contact page      */
+/*info*/
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.contact-info h1{
+  text-align: center;
+  color:#172e13;
+  position:relative;
+  margin: 10px;
+
+}
+.contact-info {
+  text-align: center;
+  margin: 2rem auto;
+  color:var(--accent1-color);
+  font-weight: bold;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color:#227912;
+  padding:2px;
+}
+.contact-info a:hover{
+  text-decoration: none;
+  color:#d7ff7b;
+  padding:2px;
+  background-color: rgba(28, 95, 16, 0.403);
+}
+.contact-form label {
+  font-weight: bold;
+  color: var(--accent1-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-family: var(--body-font);
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form .purpose {
+  display: flex;
+  align-items: center;      
+  justify-content: flex-start;
+  border: 2px solid var(--primary-color);
+  padding: 1rem 1.5rem;
+  gap: 2rem;                
+}
+
+.contact-form .purpose legend {
+  flex: 1;                   
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: left;
+  margin: 0;
+}
+
+.contact-form .radio-options {
+  flex: 2;
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem;
+}
+
+.contact-form .radio-options label {
+  color: var(--accent1-color);
+  font-weight: normal;
+}
+
+.contact-form .radio-options input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* subscribe */
+
+.contact-form button {
+  display: block;
+  width: 80%;     
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  position: relative;
+  left: 10%;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+  color:#d7ff7b
+}
+
+/* Employees Section */
+.employees {
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 2em;
+}
+
+.employee-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.employee-gallery figure {
+  text-align: center;
+  color: var(--accent1-color);
+}
+
+.employee-gallery img {
+  border: 2px solid var(--primary-color);
+}
+
+.employee-gallery figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
