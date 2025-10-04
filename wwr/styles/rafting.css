@@ -202,6 +202,10 @@ footer .socialmedia{
   padding: 2rem;
 }
 
+.map-container iframe {
+  border: 0;
+  height: 450px; 
+}
 .contact-info h1{
   text-align: center;
   color:#172e13;
