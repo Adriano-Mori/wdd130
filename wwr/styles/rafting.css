@@ -359,7 +359,7 @@ footer .socialmedia{
 /* newsletter section */
 .home-newsletter {
   text-align: center;
-  padding: auto;
+  padding: 2rem 0;
   background-color: rgba(215, 255, 123, 0.15);
   font-weight: bold;
 }
@@ -422,7 +422,7 @@ footer .socialmedia{
 
 /* grid section */
 .home-grid {
-  position:center;
+  justify-content:center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -461,7 +461,7 @@ footer .socialmedia{
 
 .trips-intro {
   text-align: center;
-  padding: auto;
+  padding: 2rem 0;
 }
 
 .trips-intro p {
