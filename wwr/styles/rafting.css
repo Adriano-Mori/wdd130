@@ -433,3 +433,94 @@ footer .socialmedia{
   display: flex;
   justify-content: space-between;
 }
+
+/* trips */
+
+.trips-main h2{
+  color:var(--secondary-color);
+}
+.trips-hero {
+  position: relative;
+}
+
+.trips-hero img {
+  width: 100%;
+  display: block;
+}
+
+.trips-hero h1 {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(23,46,19,0.7);
+  color: #fff;
+  padding: 1rem;
+}
+
+
+.trips-intro {
+  text-align: center;
+  padding: auto;
+}
+
+.trips-intro p {
+  margin:1rem;
+  font-weight: bold;
+}
+
+.trips-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.trips-btn:hover {
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+}
+
+/*  trip cards */
+.trips-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.trips-list h3 {
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.trips-list p {
+  padding: 0.1rem 1rem;
+  text-align: justify;
+}
+
+/* table layout */
+.trips-table {
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+  border: 1px solid var(--primary-color);
+  padding: 6px;
+  text-align: center;
+}
+
+.trips-table th {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
