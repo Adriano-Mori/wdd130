@@ -331,3 +331,105 @@ footer .socialmedia{
   font-weight: bold;
   font-size: 0.9rem;
 }
+
+/* homepage */
+
+/* hero */
+.home-hero {
+  position: relative;
+  width: 100%;
+}
+
+.home-hero img {
+  width: 100%;
+  display: block;
+}
+
+.home-hero h1 {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(23, 46, 19, 0.7);
+  color: var(--accent2-color);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/* newsletter section */
+.home-newsletter {
+  text-align: center;
+  padding: auto;
+  background-color: rgba(215, 255, 123, 0.15);
+  font-weight: bold;
+}
+
+.home-newsletter form {
+  max-width: 400px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home-newsletter h2{
+  color: var(--secondary-color);
+}
+
+.home-newsletter input,
+.home-newsletter button {
+  padding: 0.6rem;
+  font-family: var(--body-font);
+  border: 1px solid #ccc;
+}
+
+.home-newsletter button {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  font-weight: bold;
+}
+
+.home-newsletter button:hover {
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+}
+
+/*  action from user */
+.home-action {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(23, 46, 19, 0.1);
+  font-weight: bold;
+}
+.home-action h2 {
+  background: none;
+  color: var(--primary-color);
+}
+
+.home-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-btn:hover {
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+}
+
+/* grid section */
+.home-grid {
+  position:center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.home-grid img{
+  display: flex;
+  justify-content: space-between;
+}
