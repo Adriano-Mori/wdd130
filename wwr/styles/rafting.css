@@ -17,13 +17,18 @@
 /* header */
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--primary-color);
 }
-
+header img {
+  justify-self: start; 
+}
+header nav {
+  justify-self: end;  
+}
 nav ul {
   list-style: none;
   display: flex;
